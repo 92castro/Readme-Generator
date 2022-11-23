@@ -84,7 +84,7 @@ function init() {
 
     .then((response) => {
       fs.writeFileSync(
-        path.join(process.cwd(), "ReadMedemo.md"),
+        path.join(process.cwd(), "README.md"),
         generate(response)
       );
       console.log("Readme created");
